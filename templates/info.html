@@ -1,0 +1,40 @@
+<form method ="post" action="/predict" >
+    <h1>Predict Health Insurance Premium From Information</h1>
+
+    <label for="name"><b>Name</b></label><br>
+    <input type="text" placeholder="Enter Name" name="name"  required><br/><br/>
+
+    <label for="age"><b>Age</b></label><br/>
+    <input type="text" placeholder="Enter Age" name="age"  required><br/><br/>
+
+    <label for="gender"><b>Select Gender</b></label><br/>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br><br/>
+
+    <label for="bmi"><b>BMI</b></label><br/>
+    <input type="text" placeholder="Enter Body Mass Index" name="bmi"  required><br/><br/>
+
+    <label for="num_child"><b>No of Children</b></label><br>
+    <input type="text" placeholder="Enter no of children" name="num_child"  required><br/><br/>
+
+    <label for="smoker"><b>Are you Smoker?</b></label><br/>
+        <input type="radio" id="yes" name="smoker" value="yes" required>
+        <label for="yes">Y</label><br>
+        <input type="radio" id="no" name="smoker" value="no">
+        <label for="no">N</label><br><br/>
+
+    <label for="region"><b>Region</b></label><br/>
+        <input type="radio" id="southwest" name="region" value="southwest" required>
+        <label for="southwest">South West</label><br>
+        <input type="radio" id="southeast" name="region" value="southeast">
+        <label for="southeast">South East</label><br>
+        <input type="radio" id="northeest" name="region" value="northwest" required>
+        <label for="northwest">North West</label><br>
+        <input type="radio" id="northeast" name="region" value="northeast">
+        <label for="northeast">North East</label><br><br/>
+
+    <button type="submit">Predict Premium</button>
+
+</form>
